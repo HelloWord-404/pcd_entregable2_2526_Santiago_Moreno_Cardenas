@@ -1,0 +1,77 @@
+[
+  {
+    "nombre": "Autor1",
+    "fechaNacimiento": "1990-01-01",
+    "canciones": [1, 2]
+  },
+  {
+    "nombre": "Autor2",
+    "fechaNacimiento": "1988-05-10",
+    "canciones": [3, 4]
+  },
+  {
+    "nombre": "Autor3",
+    "fechaNacimiento": "1995-03-15",
+    "canciones": [5, 6]
+  },
+  {
+    "nombre": "Autor4",
+    "fechaNacimiento": "1992-07-20",
+    "canciones": [7, 8]
+  },
+  {
+    "nombre": "Autor5",
+    "fechaNacimiento": "1985-11-02",
+    "canciones": [9, 10]
+  },
+  {
+    "nombre": "Autor6",
+    "fechaNacimiento": "1993-04-18",
+    "canciones": [11, 12]
+  },
+  {
+    "nombre": "Autor7",
+    "fechaNacimiento": "1991-06-30",
+    "canciones": [13, 14]
+  },
+  {
+    "nombre": "Autor8",
+    "fechaNacimiento": "1989-09-09",
+    "canciones": [15, 16]
+  },
+  {
+    "nombre": "Autor9",
+    "fechaNacimiento": "1996-12-01",
+    "canciones": [17, 18]
+  },
+  {
+    "nombre": "Autor10",
+    "fechaNacimiento": "1994-02-22",
+    "canciones": [19, 20]
+  },
+  {
+    "nombre": "Autor11",
+    "fechaNacimiento": "1990-08-08",
+    "canciones": [21, 22]
+  },
+  {
+    "nombre": "Autor12",
+    "fechaNacimiento": "1987-10-14",
+    "canciones": [23, 24]
+  },
+  {
+    "nombre": "Autor13",
+    "fechaNacimiento": "1992-01-11",
+    "canciones": [25, 26]
+  },
+  {
+    "nombre": "Autor14",
+    "fechaNacimiento": "1993-05-05",
+    "canciones": [27, 28]
+  },
+  {
+    "nombre": "Autor15",
+    "fechaNacimiento": "1991-03-03",
+    "canciones": [29, 30]
+  }
+]

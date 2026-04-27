@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Energia Alta",
+    "fechaCreacion": "2024-01-01",
+    "canciones": [5, 9, 13, 15, 19, 23, 25, 27, 29]
+  },
+  {
+    "titulo": "Relax",
+    "fechaCreacion": "2024-01-05",
+    "canciones": [4, 8, 12, 18, 22, 28]
+  },
+  {
+    "titulo": "Mix Variado",
+    "fechaCreacion": "2024-02-01",
+    "canciones": [1, 6, 11, 16, 20, 24, 30]
+  },
+  {
+    "titulo": "Top Ritmo",
+    "fechaCreacion": "2024-02-10",
+    "canciones": [3, 5, 7, 9, 17, 21, 27]
+  },
+  {
+    "titulo": "Mood Feliz",
+    "fechaCreacion": "2024-03-01",
+    "canciones": [1, 3, 5, 9, 13, 15, 23, 25, 29]
+  },
+  {
+    "titulo": "Mood Triste",
+    "fechaCreacion": "2024-03-10",
+    "canciones": [2, 4, 8, 12, 18, 22, 26, 28]
+  }
+]
