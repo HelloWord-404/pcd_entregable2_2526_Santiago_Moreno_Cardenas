@@ -4,6 +4,7 @@ from cancion import Cancion
 from usuario import Usuario
 from artista import Artista
 from playList import PlayList
+from estrategia import Estrategia
 
 import json
 import random
@@ -80,21 +81,26 @@ def main():
                 print(f"({c.id}) -> {c.nombre}")
 
         elif op == "2":
-            nombre = input("Nombre: ")
+            id_s = int(input("id: "))
             for c in catalogo.list_canciones:
-                if c.nombre == nombre:
-                    user.escuchar(c)
+                if c.id == id_s:
+                    user.cargar_cancion_actual(c, datetime.now().date(), datetime.now().time())
+                    #user.escuchar(c)
+                    
                     print("Añadida al historial")
-            print("Total en sesión:", len(user.cancion_actual.canciones_durante_session))
-
+            print("Total en sesión:" )
+            for i in user.sesion_actual.canciones_durante_session:
+                print(i.cancion.nombre,"/n")
         elif op == "3":
             c = random.choice(catalogo.list_canciones)
-            user.escuchar(c)
+            user.cargar_cancion_actual(c, datetime.now().date(), datetime.now().time())
             print("Escuchando:", c.nombre)
-            print("Total en sesión:", len(user.cancion_actual.canciones_durante_session))
+            print("Total en sesión:")
 
         elif op == "4":
-            media = user.cancion_actual.calcular_media()
+            for i in user.sesion_actual.canciones_durante_session:
+                print(i.cancion.nombre,"/n")
+            media = user.sesion_actual.calcular_media()
 
             if media:
                 rec = user.recomendador.recomendar(catalogo.list_canciones, media)
