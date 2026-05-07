@@ -4,241 +4,418 @@
     "fecha": "2023-01-01",
     "autor": "Autor1",
     "id": 1,
-    "atributosSonoros": {"ritmo": 0.5, "tono": 0.3, "energia": 0.8},
-    "atributosSentimentales": {"felicidad": 0.6, "tristeza": 0.2}
+
+    "atributosSonoros": {
+      "ritmo": 0.52,
+      "energia": 0.83,
+      "tono": 0.33,
+      "bailabilidad": 0.91
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.72,
+      "tristeza": 0.18,
+      "nostalgia": 0.25,
+      "agresividad": 0.14
+    }
   },
+
   {
     "nombre": "Song2",
     "fecha": "2023-01-05",
     "autor": "Autor2",
     "id": 2,
-    "atributosSonoros": {"ritmo": 0.2, "tono": 0.7, "energia": 0.4},
-    "atributosSentimentales": {"felicidad": 0.3, "tristeza": 0.5}
+
+    "atributosSonoros": {
+      "ritmo": 0.24,
+      "energia": 0.45,
+      "tono": 0.72,
+      "bailabilidad": 0.29
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.31,
+      "tristeza": 0.57,
+      "nostalgia": 0.64,
+      "agresividad": 0.22
+    }
   },
+
   {
     "nombre": "Song3",
     "fecha": "2023-02-01",
     "autor": "Autor3",
     "id": 3,
-    "atributosSonoros": {"ritmo": 0.8, "tono": 0.6, "energia": 0.9},
-    "atributosSentimentales": {"felicidad": 0.7, "tristeza": 0.1}
+
+    "atributosSonoros": {
+      "ritmo": 0.88,
+      "energia": 0.93,
+      "tono": 0.61,
+      "bailabilidad": 0.86
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.79,
+      "tristeza": 0.09,
+      "nostalgia": 0.12,
+      "agresividad": 0.34
+    }
   },
+
   {
     "nombre": "Song4",
     "fecha": "2023-02-10",
     "autor": "Autor4",
     "id": 4,
-    "atributosSonoros": {"ritmo": 0.4, "tono": 0.2, "energia": 0.3},
-    "atributosSentimentales": {"felicidad": 0.2, "tristeza": 0.7}
+
+    "atributosSonoros": {
+      "ritmo": 0.41,
+      "energia": 0.28,
+      "tono": 0.22,
+      "bailabilidad": 0.26
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.19,
+      "tristeza": 0.77,
+      "nostalgia": 0.69,
+      "agresividad": 0.52
+    }
   },
+
   {
     "nombre": "Song5",
     "fecha": "2023-03-01",
     "autor": "Autor5",
     "id": 5,
-    "atributosSonoros": {"ritmo": 0.9, "tono": 0.8, "energia": 0.95},
-    "atributosSentimentales": {"felicidad": 0.85, "tristeza": 0.05}
+
+    "atributosSonoros": {
+      "ritmo": 0.95,
+      "energia": 0.98,
+      "tono": 0.83,
+      "bailabilidad": 0.97
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.92,
+      "tristeza": 0.04,
+      "nostalgia": 0.08,
+      "agresividad": 0.28
+    }
   },
+
   {
     "nombre": "Song6",
     "fecha": "2023-03-12",
     "autor": "Autor6",
     "id": 6,
-    "atributosSonoros": {"ritmo": 0.3, "tono": 0.4, "energia": 0.5},
-    "atributosSentimentales": {"felicidad": 0.4, "tristeza": 0.4}
+
+    "atributosSonoros": {
+      "ritmo": 0.35,
+      "energia": 0.52,
+      "tono": 0.44,
+      "bailabilidad": 0.39
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.43,
+      "tristeza": 0.42,
+      "nostalgia": 0.51,
+      "agresividad": 0.33
+    }
   },
+
   {
     "nombre": "Song7",
     "fecha": "2023-04-01",
     "autor": "Autor7",
     "id": 7,
-    "atributosSonoros": {"ritmo": 0.6, "tono": 0.5, "energia": 0.7},
-    "atributosSentimentales": {"felicidad": 0.6, "tristeza": 0.3}
+
+    "atributosSonoros": {
+      "ritmo": 0.68,
+      "energia": 0.75,
+      "tono": 0.58,
+      "bailabilidad": 0.73
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.66,
+      "tristeza": 0.21,
+      "nostalgia": 0.29,
+      "agresividad": 0.25
+    }
   },
+
   {
     "nombre": "Song8",
     "fecha": "2023-04-15",
     "autor": "Autor8",
     "id": 8,
-    "atributosSonoros": {"ritmo": 0.1, "tono": 0.2, "energia": 0.2},
-    "atributosSentimentales": {"felicidad": 0.1, "tristeza": 0.8}
+
+    "atributosSonoros": {
+      "ritmo": 0.14,
+      "energia": 0.22,
+      "tono": 0.18,
+      "bailabilidad": 0.11
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.12,
+      "tristeza": 0.82,
+      "nostalgia": 0.75,
+      "agresividad": 0.41
+    }
   },
+
   {
     "nombre": "Song9",
     "fecha": "2023-05-01",
     "autor": "Autor9",
     "id": 9,
-    "atributosSonoros": {"ritmo": 0.7, "tono": 0.9, "energia": 0.85},
-    "atributosSentimentales": {"felicidad": 0.75, "tristeza": 0.1}
+
+    "atributosSonoros": {
+      "ritmo": 0.79,
+      "energia": 0.88,
+      "tono": 0.91,
+      "bailabilidad": 0.84
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.81,
+      "tristeza": 0.11,
+      "nostalgia": 0.17,
+      "agresividad": 0.37
+    }
   },
+
   {
     "nombre": "Song10",
     "fecha": "2023-05-20",
     "autor": "Autor10",
     "id": 10,
-    "atributosSonoros": {"ritmo": 0.25, "tono": 0.35, "energia": 0.45},
-    "atributosSentimentales": {"felicidad": 0.35, "tristeza": 0.45}
+
+    "atributosSonoros": {
+      "ritmo": 0.27,
+      "energia": 0.43,
+      "tono": 0.39,
+      "bailabilidad": 0.31
+    },
+
+    "atributosSentimentales": {
+      "felicidad": 0.36,
+      "tristeza": 0.48,
+      "nostalgia": 0.56,
+      "agresividad": 0.29
+    }
+  },
+{
+  "nombre": "Song11",
+  "fecha": "2023-06-01",
+  "autor": "Autor11",
+  "id": 11,
+
+  "atributosSonoros": {
+    "ritmo": 0.62,
+    "energia": 0.71,
+    "tono": 0.67,
+    "bailabilidad": 0.74
   },
 
-  {
-    "nombre": "Song11",
-    "fecha": "2023-06-01",
-    "autor": "Autor11",
-    "id": 11,
-    "atributosSonoros": {"ritmo": 0.55, "tono": 0.65, "energia": 0.75},
-    "atributosSentimentales": {"felicidad": 0.65, "tristeza": 0.25}
-  },
-  {
-    "nombre": "Song12",
-    "fecha": "2023-06-15",
-    "autor": "Autor12",
-    "id": 12,
-    "atributosSonoros": {"ritmo": 0.15, "tono": 0.25, "energia": 0.35},
-    "atributosSentimentales": {"felicidad": 0.2, "tristeza": 0.6}
-  },
-  {
-    "nombre": "Song13",
-    "fecha": "2023-07-01",
-    "autor": "Autor13",
-    "id": 13,
-    "atributosSonoros": {"ritmo": 0.85, "tono": 0.75, "energia": 0.9},
-    "atributosSentimentales": {"felicidad": 0.8, "tristeza": 0.1}
-  },
-  {
-    "nombre": "Song14",
-    "fecha": "2023-07-10",
-    "autor": "Autor14",
-    "id": 14,
-    "atributosSonoros": {"ritmo": 0.45, "tono": 0.55, "energia": 0.6},
-    "atributosSentimentales": {"felicidad": 0.5, "tristeza": 0.4}
-  },
-  {
-    "nombre": "Song15",
-    "fecha": "2023-08-01",
-    "autor": "Autor15",
-    "id": 15,
-    "atributosSonoros": {"ritmo": 0.95, "tono": 0.85, "energia": 0.98},
-    "atributosSentimentales": {"felicidad": 0.9, "tristeza": 0.05}
-  },
-  {
-    "nombre": "Song16",
-    "fecha": "2023-08-12",
-    "autor": "Autor16",
-    "id": 16,
-    "atributosSonoros": {"ritmo": 0.35, "tono": 0.45, "energia": 0.5},
-    "atributosSentimentales": {"felicidad": 0.45, "tristeza": 0.35}
-  },
-  {
-    "nombre": "Song17",
-    "fecha": "2023-09-01",
-    "autor": "Autor17",
-    "id": 17,
-    "atributosSonoros": {"ritmo": 0.65, "tono": 0.6, "energia": 0.7},
-    "atributosSentimentales": {"felicidad": 0.6, "tristeza": 0.2}
-  },
-  {
-    "nombre": "Song18",
-    "fecha": "2023-09-18",
-    "autor": "Autor18",
-    "id": 18,
-    "atributosSonoros": {"ritmo": 0.2, "tono": 0.3, "energia": 0.25},
-    "atributosSentimentales": {"felicidad": 0.25, "tristeza": 0.65}
-  },
-  {
-    "nombre": "Song19",
-    "fecha": "2023-10-01",
-    "autor": "Autor19",
-    "id": 19,
-    "atributosSonoros": {"ritmo": 0.75, "tono": 0.85, "energia": 0.88},
-    "atributosSentimentales": {"felicidad": 0.78, "tristeza": 0.1}
-  },
-  {
-    "nombre": "Song20",
-    "fecha": "2023-10-20",
-    "autor": "Autor20",
-    "id": 20,
-    "atributosSonoros": {"ritmo": 0.3, "tono": 0.4, "energia": 0.5},
-    "atributosSentimentales": {"felicidad": 0.4, "tristeza": 0.5}
-  },
-
-  {
-    "nombre": "Song21",
-    "fecha": "2023-11-01",
-    "autor": "Autor21",
-    "id": 21,
-    "atributosSonoros": {"ritmo": 0.6, "tono": 0.7, "energia": 0.8},
-    "atributosSentimentales": {"felicidad": 0.7, "tristeza": 0.2}
-  },
-  {
-    "nombre": "Song22",
-    "fecha": "2023-11-12",
-    "autor": "Autor22",
-    "id": 22,
-    "atributosSonoros": {"ritmo": 0.1, "tono": 0.2, "energia": 0.3},
-    "atributosSentimentales": {"felicidad": 0.2, "tristeza": 0.7}
-  },
-  {
-    "nombre": "Song23",
-    "fecha": "2023-12-01",
-    "autor": "Autor23",
-    "id": 23,
-    "atributosSonoros": {"ritmo": 0.85, "tono": 0.9, "energia": 0.92},
-    "atributosSentimentales": {"felicidad": 0.88, "tristeza": 0.05}
-  },
-  {
-    "nombre": "Song24",
-    "fecha": "2023-12-15",
-    "autor": "Autor24",
-    "id": 24,
-    "atributosSonoros": {"ritmo": 0.4, "tono": 0.5, "energia": 0.6},
-    "atributosSentimentales": {"felicidad": 0.5, "tristeza": 0.4}
-  },
-  {
-    "nombre": "Song25",
-    "fecha": "2024-01-01",
-    "autor": "Autor25",
-    "id": 25,
-    "atributosSonoros": {"ritmo": 0.95, "tono": 0.8, "energia": 0.97},
-    "atributosSentimentales": {"felicidad": 0.9, "tristeza": 0.05}
-  },
-  {
-    "nombre": "Song26",
-    "fecha": "2024-01-10",
-    "autor": "Autor26",
-    "id": 26,
-    "atributosSonoros": {"ritmo": 0.3, "tono": 0.35, "energia": 0.4},
-    "atributosSentimentales": {"felicidad": 0.35, "tristeza": 0.55}
-  },
-  {
-    "nombre": "Song27",
-    "fecha": "2024-02-01",
-    "autor": "Autor27",
-    "id": 27,
-    "atributosSonoros": {"ritmo": 0.7, "tono": 0.75, "energia": 0.85},
-    "atributosSentimentales": {"felicidad": 0.75, "tristeza": 0.15}
-  },
-  {
-    "nombre": "Song28",
-    "fecha": "2024-02-14",
-    "autor": "Autor28",
-    "id": 28,
-    "atributosSonoros": {"ritmo": 0.2, "tono": 0.3, "energia": 0.35},
-    "atributosSentimentales": {"felicidad": 0.25, "tristeza": 0.65}
-  },
-  {
-    "nombre": "Song29",
-    "fecha": "2024-03-01",
-    "autor": "Autor29",
-    "id": 29,
-    "atributosSonoros": {"ritmo": 0.8, "tono": 0.85, "energia": 0.9},
-    "atributosSentimentales": {"felicidad": 0.82, "tristeza": 0.1}
-  },
-  {
-    "nombre": "Song30",
-    "fecha": "2024-03-20",
-    "autor": "Autor30",
-    "id": 30,
-    "atributosSonoros": {"ritmo": 0.35, "tono": 0.45, "energia": 0.55},
-    "atributosSentimentales": {"felicidad": 0.45, "tristeza": 0.5}
+  "atributosSentimentales": {
+    "felicidad": 0.69,
+    "tristeza": 0.19,
+    "nostalgia": 0.22,
+    "agresividad": 0.31
   }
+},
+
+{
+  "nombre": "Song12",
+  "fecha": "2023-06-15",
+  "autor": "Autor12",
+  "id": 12,
+
+  "atributosSonoros": {
+    "ritmo": 0.18,
+    "energia": 0.29,
+    "tono": 0.34,
+    "bailabilidad": 0.21
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.24,
+    "tristeza": 0.73,
+    "nostalgia": 0.66,
+    "agresividad": 0.42
+  }
+},
+
+{
+  "nombre": "Song13",
+  "fecha": "2023-07-01",
+  "autor": "Autor13",
+  "id": 13,
+
+  "atributosSonoros": {
+    "ritmo": 0.91,
+    "energia": 0.96,
+    "tono": 0.84,
+    "bailabilidad": 0.94
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.88,
+    "tristeza": 0.05,
+    "nostalgia": 0.11,
+    "agresividad": 0.36
+  }
+},
+
+{
+  "nombre": "Song14",
+  "fecha": "2023-07-10",
+  "autor": "Autor14",
+  "id": 14,
+
+  "atributosSonoros": {
+    "ritmo": 0.46,
+    "energia": 0.57,
+    "tono": 0.49,
+    "bailabilidad": 0.51
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.48,
+    "tristeza": 0.41,
+    "nostalgia": 0.53,
+    "agresividad": 0.27
+  }
+},
+
+{
+  "nombre": "Song15",
+  "fecha": "2023-08-01",
+  "autor": "Autor15",
+  "id": 15,
+
+  "atributosSonoros": {
+    "ritmo": 0.97,
+    "energia": 0.99,
+    "tono": 0.88,
+    "bailabilidad": 0.98
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.93,
+    "tristeza": 0.03,
+    "nostalgia": 0.07,
+    "agresividad": 0.39
+  }
+},
+
+{
+  "nombre": "Song16",
+  "fecha": "2023-08-12",
+  "autor": "Autor16",
+  "id": 16,
+
+  "atributosSonoros": {
+    "ritmo": 0.33,
+    "energia": 0.44,
+    "tono": 0.41,
+    "bailabilidad": 0.37
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.39,
+    "tristeza": 0.46,
+    "nostalgia": 0.58,
+    "agresividad": 0.32
+  }
+},
+
+{
+  "nombre": "Song17",
+  "fecha": "2023-09-01",
+  "autor": "Autor17",
+  "id": 17,
+
+  "atributosSonoros": {
+    "ritmo": 0.72,
+    "energia": 0.79,
+    "tono": 0.69,
+    "bailabilidad": 0.77
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.74,
+    "tristeza": 0.16,
+    "nostalgia": 0.24,
+    "agresividad": 0.34
+  }
+},
+
+{
+  "nombre": "Song18",
+  "fecha": "2023-09-18",
+  "autor": "Autor18",
+  "id": 18,
+
+  "atributosSonoros": {
+    "ritmo": 0.21,
+    "energia": 0.26,
+    "tono": 0.31,
+    "bailabilidad": 0.19
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.22,
+    "tristeza": 0.79,
+    "nostalgia": 0.71,
+    "agresividad": 0.48
+  }
+},
+
+{
+  "nombre": "Song19",
+  "fecha": "2023-10-01",
+  "autor": "Autor19",
+  "id": 19,
+
+  "atributosSonoros": {
+    "ritmo": 0.83,
+    "energia": 0.91,
+    "tono": 0.87,
+    "bailabilidad": 0.89
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.86,
+    "tristeza": 0.08,
+    "nostalgia": 0.14,
+    "agresividad": 0.35
+  }
+},
+
+{
+  "nombre": "Song20",
+  "fecha": "2023-10-20",
+  "autor": "Autor20",
+  "id": 20,
+
+  "atributosSonoros": {
+    "ritmo": 0.38,
+    "energia": 0.49,
+    "tono": 0.45,
+    "bailabilidad": 0.42
+  },
+
+  "atributosSentimentales": {
+    "felicidad": 0.41,
+    "tristeza": 0.51,
+    "nostalgia": 0.59,
+    "agresividad": 0.28
+  }
+}
+
 ]

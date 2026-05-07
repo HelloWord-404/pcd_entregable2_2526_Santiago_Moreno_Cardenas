@@ -1,3 +1,6 @@
+from busqueda_Aleatoria import BusquedaAleatoria
+from busqueda_Temporal import Busqueda_Temporal
+from busqueda_Alfabetica import Busqueda_Alfabetica
 from datetime import datetime
 from catalogo import Catalogo
 from cancion import Cancion
@@ -74,7 +77,7 @@ def main():
 
     # -------- MENÚ --------
     while True:
-        op = input("\n1 Ver canciones\n2 Elegir\n3 Aleatoria\n4 Recomendar\n0 Salir\n")
+        op = input("\n1) Ver canciones\n2) Elegir\n3) Aleatoria\n4) Recomendar\n5) Cambiar estrategia\n0) Salir\n")
 
         if op == "1":
             for c in catalogo.list_canciones:
@@ -90,28 +93,86 @@ def main():
                     print("Añadida al historial")
             print("Total en sesión:" )
             for i in user.sesion_actual.canciones_durante_session:
-                print(i.cancion.nombre,"/n")
+                print(i.cancion.nombre,"\n")
         elif op == "3":
             c = random.choice(catalogo.list_canciones)
             user.cargar_cancion_actual(c, datetime.now().date(), datetime.now().time())
             print("Escuchando:", c.nombre)
             print("Total en sesión:")
+            for i in user.sesion_actual.canciones_durante_session:
+                print(i.cancion.nombre,"\n")
 
         elif op == "4":
-            for i in user.sesion_actual.canciones_durante_session:
-                print(i.cancion.nombre,"/n")
-            media = user.sesion_actual.calcular_media()
+            # canciones escuchadas
+            print("\nCanciones escuchadas:")
 
-            if media:
-                rec = user.recomendador.recomendar(catalogo.list_canciones, media)
-                if rec:
-                    print("Recomendado:", rec.nombre)
-                else:
-                    print("No encontrado")
+            for i in user.sesion_actual.canciones_durante_session:
+                print("-", i.cancion.nombre)
+
+            # calcular datos de la sesión
+            datos = user.sesion_actual.calcular_media()
+
+            if not datos:
+                print("Escucha canciones primero")
+                continue
+
+            print("\nLideres:", datos["atributos_lider"])
+            print("cimas lideres:", round(datos["promedio_top"], 2), "(valores lideres superiores a este promedio se consideran buenas coincidencias)")
+            print("Media sesión:", round(datos["promedio_total"], 2))
+            
+
+
+            # recomendaciones
+            recomendaciones = user.recomendador.recomendar(
+                catalogo.list_canciones,
+                datos
+            )
+
+            print("\nRecomendadas:")
+
+            for i, c in enumerate(recomendaciones):
+                print(i + 1, "-", c.nombre)
+
+            # elegir
+            opcion = int(input("\nElige una canción: ")) - 1
+
+            if 0 <= opcion < len(recomendaciones):
+
+                seleccion = recomendaciones[opcion]
+
+                user.cargar_cancion_actual(
+                    seleccion,
+                    datetime.now().date(),
+                    datetime.now().time()
+                )
+
+                print("Escuchando:", seleccion.nombre)
+                print(seleccion.atributosSentimentales,"\n",seleccion.atributosSonoros)
             else:
                 print("Escucha canciones primero")
 
+        elif op == "5":
+
+            print("\nEstrategias disponibles:")
+            print("1 - Aleatoria")
+            print("2 - Alfabetica")
+            print("3 - Temporal")
+
+            e = input("Elige estrategia: ")
+
+            if e == "1":
+                user.cambiar_estrategia(BusquedaAleatoria())
+                print("Estrategia cambiada")
+            elif e == "2":
+                user.cambiar_estrategia(Busqueda_Alfabetica())
+                print("Estrategia cambiada")
+            elif e == "3":
+                user.cambiar_estrategia(Busqueda_Temporal())
+                print("Estrategia cambiada")
+            else:
+                print("Opción no válida")
         elif op == "0":
+            print("Cancion no encontrada")
             break
 
 

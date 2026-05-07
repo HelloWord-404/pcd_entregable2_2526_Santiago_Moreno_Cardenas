@@ -1,4 +1,11 @@
+from estrategia import Estrategia
+
 class Busqueda_Temporal(Estrategia):
-    def buscar(self, lista, funcion_match):
-        lista_ordenada = sorted(lista, key=lambda x: x.fechaCreacion, reverse=True)
-        return next((x for x in lista_ordenada if funcion_match(x)), None)
+
+    def buscar(self, lista):
+
+        return sorted(
+            lista,
+            key=lambda x: x.fecha,
+            reverse=True
+        )[:5]

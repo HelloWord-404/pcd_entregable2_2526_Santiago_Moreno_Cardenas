@@ -6,14 +6,6 @@ class Session_Actual:
     def agregar_cancion_escuchada(self, cancion):
         self.canciones_durante_session.append(cancion)
 
-    class Session_Actual:
-
-    def __init__(self):
-        self.canciones_durante_session = []
-
-    def agregar_cancion_escuchada(self, cancion):
-        self.canciones_durante_session.append(cancion)
-
     def calcular_media(self):
 
         if len(self.canciones_durante_session) == 0:

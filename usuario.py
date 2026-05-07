@@ -18,8 +18,9 @@ class Usuario:
         cancion_nueva = Cancion_Nueva(cancion, fecha, hora)
         self.sesion_actual.agregar_cancion_escuchada(cancion_nueva)
 
-    #def escuchar(self, cancion):
-     #   self.sesion_actual.agregar_cancion_escuchada(cancion_nueva)
+    def cambiar_estrategia(self, nueva_estrategia):
+        self.estrategia = nueva_estrategia
+        self.recomendador.estrategia = nueva_estrategia
         
 
     def cambiar_estrategica(self, nueva):
