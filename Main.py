@@ -77,7 +77,7 @@ def main():
 
     # -------- MENÚ --------
     while True:
-        op = input("\n1) Ver canciones\n2) Elegir\n3) Aleatoria\n4) Recomendar\n5) Cambiar estrategia\n0) Salir\n")
+        op = input("\n1) Ver canciones\n2) Elegir\n3) Aleatoria\n4) Recomendar\n5) Cambiar estrategia\n6) Recomendar artistas\n7) Recomendar PlayList\n0) Salir\n")
 
         if op == "1":
             for c in catalogo.list_canciones:
@@ -93,21 +93,21 @@ def main():
                     print("Añadida al historial")
             print("Total en sesión:" )
             for i in user.sesion_actual.canciones_durante_session:
-                print(i.cancion.nombre,"\n")
+                print(" ->",i.cancion.nombre,"")
         elif op == "3":
             c = random.choice(catalogo.list_canciones)
             user.cargar_cancion_actual(c, datetime.now().date(), datetime.now().time())
             print("Escuchando:", c.nombre)
             print("Total en sesión:")
             for i in user.sesion_actual.canciones_durante_session:
-                print(i.cancion.nombre,"\n")
+                print(" ->",i.cancion.nombre,"")
 
         elif op == "4":
             # canciones escuchadas
-            print("\nCanciones escuchadas:")
+            print("\nCanciones escuchadas en la sesión actual:")
 
             for i in user.sesion_actual.canciones_durante_session:
-                print("-", i.cancion.nombre)
+                print("-->", i.cancion.nombre)
 
             # calcular datos de la sesión
             datos = user.sesion_actual.calcular_media()
@@ -149,7 +149,7 @@ def main():
                 print("Escuchando:", seleccion.nombre)
                 print(seleccion.atributosSentimentales,"\n",seleccion.atributosSonoros)
             else:
-                print("Escucha canciones primero")
+                print("Cancion no valida")
 
         elif op == "5":
 
@@ -171,6 +171,110 @@ def main():
                 print("Estrategia cambiada")
             else:
                 print("Opción no válida")
+        
+        elif op == "6":
+
+            datos = user.sesion_actual.calcular_media()
+
+            if not datos:
+                print("Escucha canciones primero")
+                continue
+
+            print("\nArtistas recomendados:\n")
+
+            artistas_match = []
+
+            for artista in catalogo.list_artistas:
+
+                score = 0
+
+                for cancion in artista.lista_Canciones:
+
+                    atributos = cancion.atributosSonoros.copy()
+                    atributos.update(cancion.atributosSentimentales)
+
+                    for k in datos["atributos_lider"]:
+
+                        if atributos[k] >= datos["promedio_top"]:
+                            score += 1
+
+                artistas_match.append((score, artista))
+
+            artistas_match.sort(key=lambda x: x[0], reverse=True)
+
+            artistas = [a[1] for a in artistas_match]
+
+            top_artistas = user.estrategia.buscar(artistas)
+
+            for i, a in enumerate(top_artistas):
+                print(i + 1, "-", a.nombre)
+
+            opcion = int(input("\nElige un artista: ")) - 1
+
+            if 0 <= opcion < len(top_artistas):
+
+                artista = top_artistas[opcion]
+
+                print("\nReproduciendo canciones de:", artista.nombre)
+
+                for c in artista.lista_Canciones:
+                    print("->", c.nombre)
+
+            else:
+                print("Artista no válido")
+        
+        elif op == "7":
+
+            datos = user.sesion_actual.calcular_media()
+
+            if not datos:
+                print("Escucha canciones primero")
+                continue
+
+            print("\nPlaylists recomendadas:\n")
+
+            playlists_match = []
+
+            for playlist in catalogo.list_playlists:
+
+                score = 0
+
+                for cancion in playlist.lista_canciones:
+
+                    atributos = cancion.atributosSonoros.copy()
+                    atributos.update(cancion.atributosSentimentales)
+
+                    for k in datos["atributos_lider"]:
+
+                        if atributos[k] >= datos["promedio_top"]:
+                            score += 1
+
+                playlists_match.append((score, playlist))
+
+            playlists_match.sort(key=lambda x: x[0], reverse=True)
+
+            playlists = [p[1] for p in playlists_match]
+
+            top_playlists = user.estrategia.buscar(playlists)
+
+            for i, p in enumerate(top_playlists):
+                print(i + 1, "-", p.titulo)
+
+            opcion = int(input("\nElige una playlist: ")) - 1
+
+            if 0 <= opcion < len(top_playlists):
+
+                playlist = top_playlists[opcion]
+
+                print("\nReproduciendo playlist:", playlist.titulo)
+
+                for c in playlist.lista_canciones:
+                    print("->", c.nombre)
+
+            else:
+                print("Playlist no válida")
+
+
         elif op == "0":
             print("Cancion no encontrada")
             break

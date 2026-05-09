@@ -45,12 +45,13 @@ class Recomendador:
 
         candidatos = []
         for item in lista:
-
             if item.id in escuchadas:
                 continue
-
             if self.match(item, media_sesion):
                 candidatos.append(item)
-            if not candidatos:
-                return []
+        if not candidatos:
+            for item in lista:
+                if item.id not in escuchadas:
+                    candidatos.append(item)
+        
         return self.estrategia.buscar(candidatos)
