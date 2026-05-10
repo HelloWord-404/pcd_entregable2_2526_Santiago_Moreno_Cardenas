@@ -8,7 +8,7 @@ from usuario import Usuario
 from artista import Artista
 from playList import PlayList
 from estrategia import Estrategia
-
+import asyncio
 import json
 import random
 
@@ -18,6 +18,14 @@ def main():
     catalogo = Catalogo()
 
     # -------- CARGAR CANCIONES --------
+
+    
+
+    async def cargar():
+        print("Buscando recomendaciones...")
+        await asyncio.sleep(2)
+        print("Recomendaciones encontradas")
+
     try:
         with open("canciones.json") as f:
             data = json.load(f)
@@ -32,6 +40,7 @@ def main():
                     item["atributosSentimentales"]
                 )
                 catalogo.agregar_cancion(c)
+                
 
     except:
         print("Error cargando canciones")
@@ -127,7 +136,7 @@ def main():
                 catalogo.list_canciones,
                 datos
             )
-
+            asyncio.run(cargar())
             print("\nRecomendadas:")
 
             for i, c in enumerate(recomendaciones):
@@ -202,7 +211,7 @@ def main():
 
             artistas_match.sort(key=lambda x: x[0], reverse=True)
 
-            artistas = [a[1] for a in artistas_match]
+            artistas = [a[1] for a in artistas_match] #recibe 1 tupla, entoncs recorrer la 2da columna y atraer data
 
             top_artistas = user.estrategia.buscar(artistas)
 
