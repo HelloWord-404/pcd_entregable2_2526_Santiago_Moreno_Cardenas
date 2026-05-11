@@ -22,7 +22,3 @@ class Usuario:
         self.estrategia = nueva_estrategia
         self.recomendador.estrategia = nueva_estrategia
         
-
-    def cambiar_estrategica(self, nueva):
-        self.estrategia = nueva
-        self.recomendador.estrategia = nueva
